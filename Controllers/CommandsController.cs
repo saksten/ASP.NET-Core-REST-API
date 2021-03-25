@@ -57,5 +57,27 @@ namespace WebApi_Application.Controllers
             //return Ok(commandReadDto);
             return CreatedAtRoute(nameof(GetCommandById), new {Id = commandReadDto.Id}, commandReadDto);
         }
+
+        //PUT api/command/{id}
+        // [HttpPut("{id}")]
+        // public ActionResult<CommandUpdateDto> UpdateCommand(int id, CommandUpdateDto commandUpdateDto)
+        // {
+        //     var command = _repository.GetCommandById(id);
+        //     if (command == null)
+        //     {
+        //         return NotFound();
+        //     }
+
+        //     _mapper.Map(commandUpdateDto,command);
+        //     _repository.UpdateCommand(command);
+        //     if(_repository.SaveChanges())
+        //     {
+        //         return NoContent();
+        //     }
+        //     else
+        //     {
+        //         return Error();
+        //     }
+        // }
     }
 }
