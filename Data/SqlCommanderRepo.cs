@@ -40,7 +40,7 @@ namespace WebApi_Application.Data
 
         public void UpdateCommand(Command command)
         {
-            throw new System.NotImplementedException();
+            // Nothing
         }
     }
 }
